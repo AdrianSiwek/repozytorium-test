@@ -18,4 +18,6 @@
 
 // console.log(arr3);
 
-const a = 30;
+//const a = 30;
+
+
