@@ -103,7 +103,97 @@ const promo = '20%';
 //         console.log('Dziś mamy promocje niestandardową')
 // }
 
-const x = 10;
+// const x = 10;
 
-const evenNumber = x % 2 === 0 ? 'x jest parzyste' : 'x jest nieparzyste'; 
-console.log(evenNumber);
+// const evenNumber = x % 2 === 0 ? 'x jest parzyste' : 'x jest nieparzyste';
+// console.log(evenNumber);
+
+// const x = 50;
+// let text
+
+// if (x >= 100) {
+//     text = ('x > 100');
+// } else if (x < 100 && x > 30) {
+//     text = ('X jest średniakiem')
+// } else {
+//     text = ('X jest mały')
+// }
+
+// console.log(text.toUpperCase())
+
+// const colors = ['red', 'green', 'blue', 'purple', 'orange', 'brown', 'yelow'];
+
+// for (let i = 0; i < colors.length; i++) {
+//     console.log(colors[i]);
+// }
+
+// const cities = ['Warszawa', 'Rome', 'Lisbon', 'Amsterdam', 'Bratislava', 'Amsterdam'];
+// let text;
+
+// for (let i = 0; i < cities.length; i++) {
+//     // text = `To miasto nazywa się ${cities[i]}`;
+//     console.log(`To miasto nazywa się: ${cities[i].toUpperCase()}`);
+// }
+
+
+
+// let x = 0;
+
+// while (x < 10) {
+//     x+=2
+//      console.log(x)
+// }
+
+// let x = 20;
+
+// do {
+//     x -= 3;
+// } while (x > 0);
+
+// console.log(x);
+
+// const array = [5, 8, 10, 23, 48, 60];
+
+// for (const arr of array) {
+//     console.log(arr / 5);
+// }
+
+
+
+// for (const arr of array) {
+//     if (arr % 2 === 0) {
+//         console.log(`%cTa liczba jest parzysta ${arr}`, 'background-color: gold; color: black');
+//     } else {
+//         console.log(`%cTa liczba jest nieparzysta ${arr}`, 'background-color: tomato; color: black');
+//     }
+// }
+
+
+// const drinks = ['pepsi', 'cola', 'juic', 'whisky'];
+// const meals = ['pizza', 'lion', 'burger'];
+
+// const menu = [...drinks, ...meals];
+// console.log(menu);
+
+
+// const numbers = [0, 0, 1, 1, 2, 2, 2];
+// const colors = ['red', 'green', 'blue', true, 123];
+// const cars = [123, true, 'audi', 'bmw', 'mercedes', 'ferrari', '🤷‍♂️', '👀'];
+
+// const numbers2 = numbers.slice(0, 2);
+// console.log(numbers2);
+
+// const numbers3 = numbers.slice(-3);
+// console.log(numbers3);
+
+// const randomStuff = colors.splice(-2);
+// console.log(randomStuff);
+
+// const newCars = cars.splice(2, 4, 'test');
+// console.log(cars);
+
+
+const letters = ['c','d'];
+
+letters.unshift('a', 'b');
+console.log(letters);
