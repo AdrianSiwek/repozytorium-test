@@ -193,7 +193,21 @@ const promo = '20%';
 // console.log(cars);
 
 
-const letters = ['c','d'];
+// const letters = ['c','d'];
 
-letters.unshift('a', 'b');
-console.log(letters);
+// letters.unshift('a', 'b');
+// letters.push('e', 'f');
+// console.log(letters);
+
+// console.log(letters.includes('c'));
+
+
+
+const numbers = [0, 0, 1, 1, 2, 2, 2, 2];
+const meals = ['pizza', 'hamburger', 'carrot'];
+
+const newArrays = numbers.concat(meals);
+console.log(newArrays);
+
+const newArray = [...numbers, ...meals];
+console.log(newArray);
