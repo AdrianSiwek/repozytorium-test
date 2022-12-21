@@ -21,3 +21,19 @@
 //const a = 30;
 
 
+// const nameAge = function (name, age) {
+//     console.log(`Mam na imię ${name} i mam ${age} lat`);
+// }
+
+// nameAge("Adrian", 30)
+
+const nameAge2 = (name, age) => console.log(`Mam na imię ${name} i mam ${age} lat`);
+
+nameAge2("Adrian", 30);
+
+const days = ['monday', 'tuesday', 'wednesday', 'thursday'];
+
+const days2 = days.map(day => console.log(day));
+
+const cars = (name, speed) => console.log(`to jest ${name} ${speed} i rozwija max. prędkość`);
+cars('Ferrari', 333)

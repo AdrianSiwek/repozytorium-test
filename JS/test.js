@@ -152,62 +152,6 @@ const promo = '20%';
 
 // console.log(x);
 
-// const array = [5, 8, 10, 23, 48, 60];
-
-// for (const arr of array) {
-//     console.log(arr / 5);
-// }
 
 
 
-// for (const arr of array) {
-//     if (arr % 2 === 0) {
-//         console.log(`%cTa liczba jest parzysta ${arr}`, 'background-color: gold; color: black');
-//     } else {
-//         console.log(`%cTa liczba jest nieparzysta ${arr}`, 'background-color: tomato; color: black');
-//     }
-// }
-
-
-// const drinks = ['pepsi', 'cola', 'juic', 'whisky'];
-// const meals = ['pizza', 'lion', 'burger'];
-
-// const menu = [...drinks, ...meals];
-// console.log(menu);
-
-
-// const numbers = [0, 0, 1, 1, 2, 2, 2];
-// const colors = ['red', 'green', 'blue', true, 123];
-// const cars = [123, true, 'audi', 'bmw', 'mercedes', 'ferrari', '🤷‍♂️', '👀'];
-
-// const numbers2 = numbers.slice(0, 2);
-// console.log(numbers2);
-
-// const numbers3 = numbers.slice(-3);
-// console.log(numbers3);
-
-// const randomStuff = colors.splice(-2);
-// console.log(randomStuff);
-
-// const newCars = cars.splice(2, 4, 'test');
-// console.log(cars);
-
-
-// const letters = ['c','d'];
-
-// letters.unshift('a', 'b');
-// letters.push('e', 'f');
-// console.log(letters);
-
-// console.log(letters.includes('c'));
-
-
-
-const numbers = [0, 0, 1, 1, 2, 2, 2, 2];
-const meals = ['pizza', 'hamburger', 'carrot'];
-
-const newArrays = numbers.concat(meals);
-console.log(newArrays);
-
-const newArray = [...numbers, ...meals];
-console.log(newArray);
