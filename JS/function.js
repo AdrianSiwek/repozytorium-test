@@ -27,13 +27,54 @@
 
 // nameAge("Adrian", 30)
 
-const nameAge2 = (name, age) => console.log(`Mam na imię ${name} i mam ${age} lat`);
+// const nameAge2 = (name, age) => console.log(`Mam na imię ${name} i mam ${age} lat`);
 
-nameAge2("Adrian", 30);
+// nameAge2("Adrian", 30);
 
-const days = ['monday', 'tuesday', 'wednesday', 'thursday'];
+// const days = ['monday', 'tuesday', 'wednesday', 'thursday'];
 
-const days2 = days.map(day => console.log(day));
+// const days2 = days.map(day => console.log(day));
 
-const cars = (name, speed) => console.log(`to jest ${name} ${speed} i rozwija max. prędkość`);
-cars('Ferrari', 333)
+// const cars = (name, speed) => console.log(`to jest ${name} ${speed} i rozwija max. prędkość`);
+// cars('Ferrari', 333)
+
+
+
+// let score;
+
+// const add = (nam1, nam2) => {
+//     score = nam1 + nam2;
+//     if (score % 2 === 0) {
+//         name1();
+//     } else {
+//         name2();
+//     }
+// }
+
+// const name1 = () => {
+//     console.log(`Liczba ${score} jest parzysta`);
+// }
+
+// const name2 = () => {
+//     console.log(`Liczba ${score} jest nieparzysta`);
+// }
+// add(1, 2);
+
+
+
+
+const add = (nam1, nam2) => {
+    const score = nam1 + nam2;
+
+    (score % 2 === 0)? name1(score) : name2(score);
+}
+
+const name1 = (nam1) => {
+    console.log(`Liczba ${nam1} jest parzysta`);
+}
+
+const name2 = (nam2) => {
+    console.log(`Liczba ${nam2} jest nieparzysta`);
+}
+
+add(9,4)
