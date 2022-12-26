@@ -63,18 +63,51 @@
 
 
 
-const add = (nam1, nam2) => {
-    const score = nam1 + nam2;
+// const add = (nam1, nam2) => {
+//     const score = nam1 + nam2;
 
-    (score % 2 === 0)? name1(score) : name2(score);
+//     (score % 2 === 0)? name1(score) : name2(score);
+// }
+
+// const name1 = (nam1) => {
+//     console.log(`Liczba ${nam1} jest parzysta`);
+// }
+
+// const name2 = (nam2) => {
+//     console.log(`Liczba ${nam2} jest nieparzysta`);
+// }
+
+// add(9,4)
+
+// let celsius;
+// let temp;
+
+// const fahrenheit = (c) => {
+//     celsius = c;
+//     temp = celsius * 9 / 5 + 32;
+//     console.log(`${celsius}oC = ${temp}F`)
+// }
+
+// fahrenheit(20)
+
+
+const num = 10;
+let numbers = [];
+
+for (let i = 0; i < num; i++) {
+    numbers.push(i);
 }
 
-const name1 = (nam1) => {
-    console.log(`Liczba ${nam1} jest parzysta`);
+console.log(numbers);
+
+const test = (params) => {
+    if (params % 3 === 0 && params !== 0) {
+        console.log(`${params} jest podzielne przez 3`);
+    } else {
+        console.log(`${params} nie jest podzielne przez 3 i ${params} jest = 0`)
+    }
 }
 
-const name2 = (nam2) => {
-    console.log(`Liczba ${nam2} jest nieparzysta`);
-}
+test(2);
 
-add(9,4)
+numbers.forEach(test);
