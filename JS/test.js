@@ -84,7 +84,7 @@
 //     console.log(`${x} < ${y}`)
 // }
 
-const promo = '20%';
+// const promo = '20%';
 
 // switch (promo) {
 //     case '30%':
@@ -151,7 +151,3 @@ const promo = '20%';
 // } while (x > 0);
 
 // console.log(x);
-
-
-
-
