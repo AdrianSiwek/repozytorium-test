@@ -151,3 +151,15 @@
 // } while (x > 0);
 
 // console.log(x);
+
+// const ulList = document.querySelector('ul');
+// const liList = ulList.createElement('li');
+// const liList = document.createElement('li');
+// ulList.appendChild(liList);
+// const imgCreate = document.createElement('img');
+// liList.append(imgCreate);
+
+// imgCreate.setAttribute('src', "./Image/jesien-na-podhalu.jpg");
+// imgCreate.setAttribute('alt', 'drzewa w kolorach');
+
+// console.log(imgCreate.hasAttribute('src'))
