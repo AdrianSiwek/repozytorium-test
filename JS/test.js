@@ -163,3 +163,22 @@
 // imgCreate.setAttribute('alt', 'drzewa w kolorach');
 
 // console.log(imgCreate.hasAttribute('src'))
+
+
+const div = document.querySelector('.wrapper');
+const ulList = document.querySelector('ul');
+const liList = document.querySelectorAll('li');
+let number = 1;
+
+for (const li of liList) {
+    li.textContent = number;
+    li.dataset.id = number;
+    number++;
+}
+
+const liThird = document.querySelector('[data-id="3"]')
+console.log(liThird);
+
+const parentEl = liThird.parentElement.parentElement;
+
+console.log(parentEl);
