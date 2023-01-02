@@ -43,22 +43,102 @@ const newBook = Object.create(book);
 // const [red, yelow, green] = rgb;
 // console.log(red, yelow, green);
 
-const defaultSettings = {
-  theme: "light",
-  public: true,
-  withPassword: false,
-  minNumberOfQuestions: 10,
-  timePerQuestion: 60,
-};
-const overrideSettings = {
-  public: false,
-  withPassword: true,
-  timePerQuestion: 30,
-};
-// Change code below this line
-const finalSettings = {
-  ...defaultSettings, ... overrideSettings
-};
+// const defaultSettings = {
+//   theme: "light",
+//   public: true,
+//   withPassword: false,
+//   minNumberOfQuestions: 10,
+//   timePerQuestion: 60,
+// };
+// const overrideSettings = {
+//   public: false,
+//   withPassword: true,
+//   timePerQuestion: 30,
+// };
+// // Change code below this line
+// const finalSettings = {
+//   ...defaultSettings, ... overrideSettings
+// };
 
-console.log(finalSettings);
+// console.log(finalSettings);
 
+
+// const myBook = {
+//   title: "Ogniem i Mieczem",
+//   author: 'Henryk Sienkiewicz',
+//   years: 1921
+// };
+
+// const myFavourMeals = {
+//   firstMeals: 'tomato soup',
+//   twoMeals: 'pierogi',
+//   thirdMeals: 'naleśniki'
+// };
+
+// const myUsser = {
+//   name: "Anika",
+//   age: 30,
+// }
+
+// myUsser.lastName = "Kowalska";
+// myUsser['favour-color'] = 'orange'
+// console.log(myUsser);
+
+// const myMeals = "wołowina"
+// const myDog = {
+//   name: "Maaksik",
+//   myAgeDoge: 2,
+//   myMeals
+// }
+
+
+// console.log(myDog);
+
+// const myUsser = {
+//   name: 'Ada',
+//   showUsser () {
+//     console.log(this.name);
+//   }
+// }
+// myUsser.showUsser();
+
+// function User(name, age) {
+//   this.name = name;
+//   this.age = age;
+
+//   this.hello = function () {
+//     console.log(`Cześć ${this.name}`)
+//   }
+// }
+
+// const newUsser = new User('Karol', 30);
+// console.log(newUsser);
+// User.prototype.hello = function () {
+//     console.log(`Cześć ${this.name}`)
+// } //prototyp, dodajemy go do prototypów na consoli ale mozemy z niego skorzystać
+  
+// newUsser.hello();
+
+
+const aBtn = document.querySelector('.a');
+const bBtn = document.querySelector('.b');
+const cBtn = document.querySelector('.c');
+
+const p = document.querySelector('p');
+
+function Meals(name, price) {
+  this.name = name;
+  this.price = price;
+}
+
+const newMeals = new Meals('pizza', 34);
+const newMeals2 = new Meals('zupa', 18);
+const newMeals3 = new Meals('ryba', 48)
+
+Meals.prototype.hello = function () {
+  console.log(`${this.name} kosztuje ${this.price}`)
+}
+
+aBtn.addEventListener('click', () => { newMeals.hello() });
+bBtn.addEventListener('click', () => { newMeals2.hello() });
+cBtn.addEventListener('click', () => {newMeals3.hello()});
