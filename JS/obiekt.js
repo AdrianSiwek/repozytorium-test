@@ -120,25 +120,62 @@ const newBook = Object.create(book);
 // newUsser.hello();
 
 
-const aBtn = document.querySelector('.a');
-const bBtn = document.querySelector('.b');
-const cBtn = document.querySelector('.c');
+// const aBtn = document.querySelector('.a');
+// const bBtn = document.querySelector('.b');
+// const cBtn = document.querySelector('.c');
 
-const p = document.querySelector('p');
+// const p = document.querySelector('p');
 
-function Meals(name, price) {
+// function Meals(name, price) {
+//   this.name = name;
+//   this.price = price;
+// }
+
+// const newMeals = new Meals('pizza', 34);
+// const newMeals2 = new Meals('zupa', 18);
+// const newMeals3 = new Meals('ryba', 48)
+
+// Meals.prototype.hello = function () {
+//   console.log(`${this.name} kosztuje ${this.price}`)
+// }
+
+// aBtn.addEventListener('click', () => { newMeals.hello() });
+// bBtn.addEventListener('click', () => { newMeals2.hello() });
+// cBtn.addEventListener('click', () => {newMeals3.hello()});
+
+
+function Car(name, price) {
   this.name = name;
   this.price = price;
 }
 
-const newMeals = new Meals('pizza', 34);
-const newMeals2 = new Meals('zupa', 18);
-const newMeals3 = new Meals('ryba', 48)
-
-Meals.prototype.hello = function () {
+Car.prototype.hello = function () {
   console.log(`${this.name} kosztuje ${this.price}`)
 }
 
-aBtn.addEventListener('click', () => { newMeals.hello() });
-bBtn.addEventListener('click', () => { newMeals2.hello() });
-cBtn.addEventListener('click', () => {newMeals3.hello()});
+Car.prototype.engine = function () {
+  console.log(`${this.name} to diesel`)
+}
+
+const newCars = new Car('Audi', 35000)
+newCars.hello()
+newCars.engine()
+
+
+class Car2 {
+  constructor(name, price) {
+    this.name = name;
+    this.price = price;
+  }
+  engine() {
+  console.log(`${this.name} to diesel`)
+}
+
+  hello() {
+  console.log(`${this.name} kosztuje ${this.price}`)
+}
+}
+
+const newCars2 = new Car2('Mercedes', 500000)
+console.log(newCars2.engine());
+console.log(newCars2.hello())
