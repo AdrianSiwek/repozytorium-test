@@ -1,3 +1,10 @@
-# repozytorium-test
+#  Training
 
-Opis projektu
+Exercises from JS tasks:
+- APIs,
+- object,
+- array,
+- loops,
+- DOM,
+- converter
+- play
